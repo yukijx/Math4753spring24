@@ -1,0 +1,36 @@
+---
+title: "Lab2"
+author: "Yuki Zheng"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: yes
+    toc_float: yes
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Tasks
+Tasks for Lab 2
+
+## Task 1
+Obtain the working directory by issuing the command 
+```{r}
+getwd()
+```
+## Task 2
+Read the provided .csv file and print the first six lines of the data.
+```{r}
+epa <- read.csv("EPAGAS-1.csv")
+head(epa)
+```
+
+## Task 3
+Make the object mpg, the number of miles per gallon vector 
+```{r}
+mpg <- epa$MPG
+mpg
+```

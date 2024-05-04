@@ -1,0 +1,52 @@
+---
+title: "What the Package Does"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{What the Package Does}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(SPRING244753zhen0023)
+```
+
+## Introduction 
+This package consists of eight unique functions that were used for the applied statistics course. Some of these functions produce graphs while others compute and output values. Some of the functions calculate the probability of a specific event happening. 
+
+
+## Function 1 
+
+```{r}
+SPRING244753zhen0023::mybin(10, 10, 0.7)
+```
+
+
+
+## Function 2 
+
+```{r}
+SPRING244753zhen0023::myboot2(10, fun="mean", 0.05, 2, 1000)
+```
+
+
+## Function 3 
+
+```{r}
+SPRING244753zhen0023::myplot(10)
+```
+
+
+## Function 4 
+
+```{r}
+SPRING244753zhen0023::myclt(10,10)
+```
+
